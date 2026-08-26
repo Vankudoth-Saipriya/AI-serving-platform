@@ -1,0 +1,27 @@
+# Python & Environment
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Large Model Weight Artifacts (Exclude binary weights from standard git commits)
+model/*.onnx
+model/distilbert_clinc150/*.safetensors
+model/distilbert_clinc150/pytorch_model.bin
+*.safetensors
+*.onnx
+*.bin
+*.pt
+
+# Monitoring & Logs
+load_test/benchmark_report.json
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

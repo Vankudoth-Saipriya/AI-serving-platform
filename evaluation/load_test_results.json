@@ -1,0 +1,77 @@
+{
+  "benchmark_timestamp": "2026-08-26T15:22:44Z",
+  "environment": {
+    "server_host": "127.0.0.1",
+    "server_port": 8000,
+    "inference_backend": "ONNX Runtime (CPUExecutionProvider)",
+    "onnx_threads": {
+      "intra_op": 2,
+      "inter_op": 2
+    }
+  },
+  "concurrency_levels": {
+    "users_10": {
+      "concurrent_users": 10,
+      "duration_seconds": 15,
+      "total_requests": 346,
+      "successful_requests": 346,
+      "failed_requests": 0,
+      "error_rate_percent": 0.0,
+      "api_throughput_rps": 24.54,
+      "prediction_throughput_qps": 30.6,
+      "latency_metrics_ms": {
+        "median_p50": 82.0,
+        "p95": 340.0,
+        "p99": 380.0,
+        "max": 410.3
+      },
+      "latency_breakdown_ms": {
+        "avg_http_end_to_end": 310.23,
+        "avg_onnx_runtime_pure": 306.23,
+        "overhead_ms": 4.0
+      }
+    },
+    "users_50": {
+      "concurrent_users": 50,
+      "duration_seconds": 15,
+      "total_requests": 733,
+      "successful_requests": 733,
+      "failed_requests": 0,
+      "error_rate_percent": 0.0,
+      "api_throughput_rps": 51.75,
+      "prediction_throughput_qps": 56.4,
+      "latency_metrics_ms": {
+        "median_p50": 460.0,
+        "p95": 2000.0,
+        "p99": 2400.0,
+        "max": 2465.77
+      },
+      "latency_breakdown_ms": {
+        "avg_http_end_to_end": 1769.58,
+        "avg_onnx_runtime_pure": 1701.9,
+        "overhead_ms": 67.68
+      }
+    },
+    "users_100": {
+      "concurrent_users": 100,
+      "duration_seconds": 15,
+      "total_requests": 696,
+      "successful_requests": 696,
+      "failed_requests": 0,
+      "error_rate_percent": 0.0,
+      "api_throughput_rps": 44.81,
+      "prediction_throughput_qps": 56.0,
+      "latency_metrics_ms": {
+        "median_p50": 1500.0,
+        "p95": 3800.0,
+        "p99": 4400.0,
+        "max": 4943.68
+      },
+      "latency_breakdown_ms": {
+        "avg_http_end_to_end": 2930.37,
+        "avg_onnx_runtime_pure": 2217.29,
+        "overhead_ms": 713.08
+      }
+    }
+  }
+}

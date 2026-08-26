@@ -1,0 +1,11 @@
+{
+  "overall_accuracy": 0.8618,
+  "macro_f1": 0.8889,
+  "in_scope_accuracy": 0.9298,
+  "in_scope_macro_f1": 0.8902,
+  "oos_precision": 0.9603,
+  "oos_recall": 0.556,
+  "oos_f1": 0.7042,
+  "num_test_samples": 5500,
+  "evaluation_timestamp": "2026-08-26T15:33:39Z"
+}

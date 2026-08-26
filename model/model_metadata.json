@@ -1,0 +1,24 @@
+{
+  "model_name": "distilbert_clinc150",
+  "model_version": "1.0.0",
+  "architecture": "DistilBertForSequenceClassification",
+  "base_model": "distilbert-base-uncased",
+  "num_parameters": 66953479,
+  "task": "intent-classification",
+  "dataset": "clinc/clinc_oos (plus)",
+  "num_classes": 151,
+  "oos_label_id": 42,
+  "oos_label_name": "oos",
+  "max_seq_length": 48,
+  "export_format": "safetensors",
+  "training_reference": "Project 3: Transformer-Based Intent Classification & OOS Modeling",
+  "verified_baseline_metrics": {
+    "overall_accuracy": 0.8618,
+    "macro_f1": 0.8889,
+    "in_scope_accuracy": 0.9298,
+    "in_scope_macro_f1": 0.9252,
+    "oos_precision": 0.9603,
+    "oos_recall": 0.5560,
+    "oos_f1": 0.7042
+  }
+}

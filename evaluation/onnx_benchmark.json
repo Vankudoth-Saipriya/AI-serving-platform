@@ -1,0 +1,56 @@
+{
+  "pytorch_model_size_mb": 255.86,
+  "onnx_model_size_mb": 255.98,
+  "benchmark_repetitions": 50,
+  "warmup_runs": 5,
+  "batch_benchmarks": {
+    "batch_1": {
+      "batch_size": 1,
+      "pytorch": {
+        "mean_latency_ms": 35.37,
+        "median_latency_ms": 35.29,
+        "p95_latency_ms": 39.73,
+        "throughput_qps": 28.3
+      },
+      "onnx_runtime": {
+        "mean_latency_ms": 18.42,
+        "median_latency_ms": 18.93,
+        "p95_latency_ms": 20.65,
+        "throughput_qps": 54.3
+      },
+      "speedup_factor": 1.92
+    },
+    "batch_8": {
+      "batch_size": 8,
+      "pytorch": {
+        "mean_latency_ms": 158.52,
+        "median_latency_ms": 156.94,
+        "p95_latency_ms": 170.12,
+        "throughput_qps": 50.5
+      },
+      "onnx_runtime": {
+        "mean_latency_ms": 135.73,
+        "median_latency_ms": 135.0,
+        "p95_latency_ms": 149.54,
+        "throughput_qps": 58.9
+      },
+      "speedup_factor": 1.17
+    },
+    "batch_32": {
+      "batch_size": 32,
+      "pytorch": {
+        "mean_latency_ms": 602.81,
+        "median_latency_ms": 601.77,
+        "p95_latency_ms": 628.07,
+        "throughput_qps": 53.1
+      },
+      "onnx_runtime": {
+        "mean_latency_ms": 553.61,
+        "median_latency_ms": 547.18,
+        "p95_latency_ms": 590.62,
+        "throughput_qps": 57.8
+      },
+      "speedup_factor": 1.09
+    }
+  }
+}
